@@ -8,4 +8,7 @@ import com.spe.demo.springbootjpa.domain.Tour;
 
 public interface TourRepository extends CrudRepository<Tour, Integer> {
 	List<Tour> findByTourPackageCode(String code);
+	
+	
+	
 }
