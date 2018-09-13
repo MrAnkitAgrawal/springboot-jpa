@@ -1,6 +1,7 @@
 package com.spe.demo.springbootjpa.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.spe.demo.springbootjpa.domain.Difficulty;
 import com.spe.demo.springbootjpa.domain.Region;
@@ -9,6 +10,7 @@ import com.spe.demo.springbootjpa.domain.TourPackage;
 import com.spe.demo.springbootjpa.repo.TourPackageRepository;
 import com.spe.demo.springbootjpa.repo.TourRepository;
 
+@Service
 public class TourService {
 	private TourRepository tourRepository;
     private TourPackageRepository tourPackageRepository;

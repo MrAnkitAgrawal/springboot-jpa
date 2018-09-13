@@ -16,11 +16,12 @@ public class TourPackageService {
 	}
 	
 	public TourPackage createTourPackage(String code, String name) {
-        if (tourPackageRepository.findById(code) == null) {
+        /*if (tourPackageRepository.findById(code) == null) {
             return tourPackageRepository.save(new TourPackage(code, name));
         } else {
             return null;
-        }
+        }*/
+		return tourPackageRepository.save(new TourPackage(code, name));
     }
     public Iterable<TourPackage> lookup(){
         return tourPackageRepository.findAll();
